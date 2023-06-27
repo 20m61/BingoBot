@@ -1,8 +1,11 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+// index.tsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import BingoApp from './BingoApp';
 
-const App = () => {
-  return <h1>Hello, React!</h1>;
-};
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <React.StrictMode>
+    <BingoApp />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
